@@ -108,6 +108,7 @@ def test_site_create_dir_function_module1(parse):
     directory_path = directory.code.find_all("binary_operator", value="/")
     directory_path_exists = len(directory_path) == 1
     assert directory_path_exists, "Are you assigning the correct path to `directory`?"
+    print(directory_path_exists)
 
     first_exist = str(directory_path[0].first) == "self.dest"
     assert (

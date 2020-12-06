@@ -1,4 +1,4 @@
-import os
+
 from pathlib import Path
 from ssg.parsers import Parser
 
